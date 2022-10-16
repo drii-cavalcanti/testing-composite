@@ -15,5 +15,8 @@ jobs:
     steps:
     - name: Check Exercises
       uses: testing-features-org/devops-exercises@v1
-
+      with:
+        owner: studentA
+        github_token: ${{ secrets.SVC_GITHUB_DEVOPS }}
+        # ref: tag, branch or commit 
 
