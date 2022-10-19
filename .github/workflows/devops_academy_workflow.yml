@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check Exercises
-      uses: testing-features-org/devops-exercises@v1
+      uses: testing-features-org/devops-exercises@v2
       #with:
         #owner: studentA
         #github_token: ${{ secrets.SVC_GITHUB_DEVOPS }}
