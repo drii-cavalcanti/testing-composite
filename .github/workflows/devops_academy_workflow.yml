@@ -9,15 +9,22 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  prepare:
     runs-on: ubuntu-latest
+      # Map a step output to a job output
+      outputs:
+        listdir: ${{ steps.initial.outputs.listdir }}
+      steps:
+        - id: initial
+          run: echo "listdir=$(find .)" >> $GITHUB_OUTPUT\
 
+  send:
+    runs-on: ubuntu-latest
     steps:
     - name: Review Exercise 1
-      id: initial
+      needs: prepare
       uses: devopsacademyau/academy2/exercise1@dev
       with:
         ref: v0
         listdir: ${{ steps.initial.outputs.listdir }}
-      run:  |
-        echo "listdir=$(find .)" >> $GITHUB_OUTPUT
+     
