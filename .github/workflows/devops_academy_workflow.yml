@@ -16,7 +16,9 @@ jobs:
       listdir: ${{ steps.initial.outputs.listdir }}
     steps:
       - id: initial
-        run: echo "listdir=$(find .)" >> $GITHUB_OUTPUT
+        run: |
+          echo "listdir=$(find .)"
+          echo "listdir=$(find .)" >> $GITHUB_OUTPUT
 
   review:
     runs-on: ubuntu-latest
