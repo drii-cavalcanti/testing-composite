@@ -1,0 +1,17 @@
+#Process
+➜  temp git:(Temp01) ✗ touch my_env.txt
+➜  temp git:(Temp01) ✗ vi my_env.txt
+➜  temp git:(Temp01) ✗ git add my_env.txt 
+➜  temp git:(Temp01) ✗ git commit -m "Adding secret file"
+[Temp01 ec6be18] Adding secret file
+ 1 file changed, 3 insertions(+)
+ create mode 100644 temp/my_env.txt
+➜  temp git:(Temp01) ✗ git log
+➜  temp git:(Temp01) ✗ git rebase -i HEAD~2
+
+#Selecting commit from rebase to drop
+pick 0ba741e Deleted wrong sized file (Adding big f1le)
+drop ec6be18 Adding secret file
+
+
+SECRET=thisisapasswordrawr
