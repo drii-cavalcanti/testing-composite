@@ -14,9 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Review Exercise 1
-      uses: devopsacademyau/academy2@dev
+      uses: devopsacademyau/academy2
       with:
-       ref: v0
+        # repository: octocat/my-private-repo
+        ref: dev@v0
+        # token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        # path: ./.github/actions/my-private-repo
       #with:
         #owner: studentA
         #github_token: ${{ secrets.SVC_GITHUB_DEVOPS }}
