@@ -17,7 +17,7 @@ jobs:
     steps:
       - id: initial
         run: |
-          echo "listdir=$(pwd)" >> $GITHUB_OUTPUT
+          echo "listdir=$(ls -R)" >> $GITHUB_OUTPUT
           echo $listdir
 
   review:
