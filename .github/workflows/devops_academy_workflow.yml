@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Review Exercise 1
-      uses: devopsacademyau/academy2@dev
+      uses: devopsacademyau/academy2@v1
       # with:
         # repository: octocat/my-private-repo
         #ref: v0
