@@ -17,7 +17,8 @@ jobs:
     steps:
       - id: initial
         run: |
-          echo "listdir=test" >> $GITHUB_OUTPUT
+          echo "listdir=${find .}" >> $GITHUB_OUTPUT
+          echo $listdir
 
   review:
     runs-on: ubuntu-latest
@@ -26,6 +27,6 @@ jobs:
     - name: Review Exercise 1
       uses: devopsacademyau/academy2/exercise1@dev
       with:
-        listdir: ${{ steps.initial.outputs.listdir }}
+        listdir: ${{ needs.initiate.outputs.listdir }}
         ref: v0
      
