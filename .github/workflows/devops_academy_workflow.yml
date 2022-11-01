@@ -10,7 +10,7 @@ on:
 
 jobs:
 
-  prepare:
+  initialize:
     runs-on: ubuntu-latest
     outputs:
       listdir: ${{ steps.initial.outputs.listdir }}
@@ -20,7 +20,7 @@ jobs:
 
   review:
     runs-on: ubuntu-latest
-    needs: prepare
+    needs: initialize
     steps:
     - name: Review Exercise 1
       uses: devopsacademyau/academy2/exercise1@dev
