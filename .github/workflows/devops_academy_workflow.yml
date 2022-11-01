@@ -14,9 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Review Exercise 1
-      uses: devopsacademyau/academy2@exercise1
-      with:
-        ref: v0
+      uses: devopsacademyau/academy2@v0
+      # with:
+      #   ref: v0
       #with:
         #owner: studentA
         #github_token: ${{ secrets.SVC_GITHUB_DEVOPS }}
