@@ -14,8 +14,8 @@ jobs:
     steps:
     - name: Review Exercise 1
       uses: devopsacademyau/academy2/exercise1@dev
-        with:
-          ref: v0
+      with:
+        ref: v0
         # repository: octocat/my-private-repo
         #ref: v0
         # token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
