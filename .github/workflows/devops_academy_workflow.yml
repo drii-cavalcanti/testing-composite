@@ -9,13 +9,12 @@ on:
   workflow_dispatch:
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Review Exercise 1
       uses: devopsacademyau/academy2@dev
-      with:
+      # with:
         # repository: octocat/my-private-repo
         #ref: v0
         # token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
