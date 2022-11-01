@@ -18,7 +18,7 @@ jobs:
       - id: initial
         run: |
           echo "listdir=$(ls -R)" >> $GITHUB_OUTPUT
-          find .
+          du -a
 
   review:
     runs-on: ubuntu-latest
