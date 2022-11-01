@@ -16,9 +16,13 @@ jobs:
       listdir: ${{ steps.initial.outputs.listdir }}
     steps:
       - id: initial
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
         run: |
           echo "listdir=$(ls -R)" >> $GITHUB_OUTPUT
           git log --reflog
+
 
   review:
     runs-on: ubuntu-latest
