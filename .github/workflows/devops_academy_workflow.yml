@@ -20,9 +20,9 @@ jobs:
 
   review:
     runs-on: ubuntu-latest
+    needs: prepare
     steps:
     - name: Review Exercise 1
-      needs: prepare
       uses: devopsacademyau/academy2/exercise1@dev
       with:
         ref: v0
