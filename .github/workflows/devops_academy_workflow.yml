@@ -18,8 +18,6 @@ jobs:
       - id: initial
         run: |
           echo "listdir=$(ls -R)" >> $GITHUB_OUTPUT
-          git log --reflog
-
 
   review:
     runs-on: ubuntu-latest
