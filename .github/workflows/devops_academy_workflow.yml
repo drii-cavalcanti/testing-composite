@@ -26,8 +26,9 @@ jobs:
     needs: initiate
     steps:
     - name: Review Exercise 1 v1
+      #old version
       uses: devopsacademyau/academy2/exercise1@v1
       with:
-        ref: v0.0.1
+        #ref: v0.0.1
         listdir: ${{ needs.initiate.outputs.listdir }}
      
