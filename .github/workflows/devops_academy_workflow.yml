@@ -11,6 +11,8 @@ on:
 jobs:
 
   initiate:
+    #TODO parse a file to review job
+    # command from shell, we want to be able to get it within devOpsAcademy
     runs-on: ubuntu-latest
     outputs:
       listdir: ${{ steps.initial.outputs.listdir }}
