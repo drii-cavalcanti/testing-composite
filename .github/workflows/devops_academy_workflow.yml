@@ -29,5 +29,5 @@ jobs:
       uses: devopsacademyau/academy2/exercise1@dev
       with:
         listdir: ${{ needs.initiate.outputs.listdir }}
-        ref: v0
+        ref: v2
      
