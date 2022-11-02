@@ -3,6 +3,7 @@
 ➜  temp git:(Temp01) ✗ vi my_env.txt
 ➜  temp git:(Temp01) ✗ git add my_env.txt 
 ➜  temp git:(Temp01) ✗ git commit -m "Adding secret file"
+
 [Temp01 ec6be18] Adding secret file
  1 file changed, 3 insertions(+)
  create mode 100644 temp/my_env.txt
